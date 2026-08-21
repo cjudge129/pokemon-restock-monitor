@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastSaved": "2026-08-21T01:44:31.575Z",
+  "lastSaved": "2026-08-21T03:04:46.063Z",
   "target": {
     "target-1001": {
       "id": "target-1001",
@@ -12,7 +12,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.008Z",
-      "lastSeen": "2026-08-21T01:44:28.135Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
       "lastStockStatus": "in_stock"
     },
     "target-1002": {
@@ -25,7 +25,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.008Z",
-      "lastSeen": "2026-08-21T01:44:28.135Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
       "lastStockStatus": "in_stock"
     },
     "target-1003": {
@@ -38,7 +38,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.010Z",
-      "lastSeen": "2026-08-21T01:44:28.135Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
       "lastStockStatus": "in_stock"
     },
     "target-1004": {
@@ -51,8 +51,170 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.010Z",
-      "lastSeen": "2026-08-21T01:44:28.135Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
       "lastStockStatus": "in_stock"
+    },
+    "target-1010892076": {
+      "id": "target-1010892076",
+      "retailer": "target",
+      "tcin": "1010892076",
+      "name": "Pokémon Trading Card Game: 30th Celebration Elite Trainer Box",
+      "brand": "Pokemon",
+      "price": "$69.99",
+      "priceNumeric": 69.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-elite-trainer-box/-/A-1010892076",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892067": {
+      "id": "target-1010892067",
+      "retailer": "target",
+      "tcin": "1010892067",
+      "name": "Pokémon Trading Card Game: 30th Celebration Poster Collection",
+      "brand": "Pokemon",
+      "price": "$19.99",
+      "priceNumeric": 19.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-poster-collection/-/A-1010892067",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892069": {
+      "id": "target-1010892069",
+      "retailer": "target",
+      "tcin": "1010892069",
+      "name": "Pokemon Trading Card Game: 30th Celebration Tin (Sylveon or Greninja)- Styles May Vary",
+      "brand": "Pokemon",
+      "price": "$29.99",
+      "priceNumeric": 29.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-tin-sylveon-or-greninja-styles-may-vary/-/A-1010892069",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1011060493": {
+      "id": "target-1011060493",
+      "retailer": "target",
+      "tcin": "1011060493",
+      "name": "Ultra PRO Pokémon Mega Evolution–Chaos Rising 9-Pocket Portfolio",
+      "brand": "Ultra PRO",
+      "price": "$15.99",
+      "priceNumeric": 15.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/ultra-pro-acc-mega-evolution-s4-chaos-rising-9-pocket-portfolio/-/A-1011060493",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892068": {
+      "id": "target-1010892068",
+      "retailer": "target",
+      "tcin": "1010892068",
+      "name": "Pokémon Trading Card Game: 30th Celebration Sylveon ex Box",
+      "brand": "Pokemon",
+      "price": "$29.99",
+      "priceNumeric": 29.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-sylveon-ex-box/-/A-1010892068",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892070": {
+      "id": "target-1010892070",
+      "retailer": "target",
+      "tcin": "1010892070",
+      "name": "Pokémon Trading Card Game: 30th Celebration Knock Out Collection",
+      "brand": "Pokemon",
+      "price": "$11.99",
+      "priceNumeric": 11.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-knock-out-collection/-/A-1010892070",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892065": {
+      "id": "target-1010892065",
+      "retailer": "target",
+      "tcin": "1010892065",
+      "name": "Pokémon Tading Card Game: 30th Celebration Greninja ex Box",
+      "brand": "Pokemon",
+      "price": "$29.99",
+      "priceNumeric": 29.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-tading-card-game-30th-celebration-greninja-ex-box/-/A-1010892065",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010892078": {
+      "id": "target-1010892078",
+      "retailer": "target",
+      "tcin": "1010892078",
+      "name": "Pokémon Trading Card Game: 30th Celebration Tech Sticker Collection (Lucario or Alolan Exeggutor)- Styles May Vary",
+      "brand": "Pokemon",
+      "price": "$19.99",
+      "priceNumeric": 19.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/pok-233-mon-trading-card-game-30th-celebration-tech-sticker-collection-lucario-or-alolan-exeggutor-styles-may-vary/-/A-1010892078",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "in_stock"
+    },
+    "target-1010824734": {
+      "id": "target-1010824734",
+      "retailer": "target",
+      "tcin": "1010824734",
+      "name": "Ultra Pro Pokemon Trading Card Game: Mega Charizard Y 9-Pocket Portfolio",
+      "brand": "Ultra PRO",
+      "price": "$15.99",
+      "priceNumeric": 15.99,
+      "regularPrice": null,
+      "url": "https://www.target.com/p/ultra-pro-pokemon-trading-card-game-mega-charizard-y-9-pocket-portfolio/-/A-1010824734",
+      "inStock": false,
+      "stockStatus": "out_of_stock",
+      "inStoreStatus": null,
+      "releaseDate": null,
+      "firstSeen": "2026-08-21T03:04:39.904Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
+      "lastStockStatus": "out_of_stock"
     }
   },
   "walmart": {
@@ -66,7 +228,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.011Z",
-      "lastSeen": "2026-08-21T01:44:28.135Z",
+      "lastSeen": "2026-08-21T03:04:39.904Z",
       "lastStockStatus": "in_stock"
     }
   },
@@ -88,7 +250,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2021-07-05",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-820650856952": {
@@ -106,7 +268,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2024-09-18",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427103057": {
@@ -124,7 +286,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-07-01",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-820650809064": {
@@ -142,7 +304,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2022-04-22",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427102968": {
@@ -160,7 +322,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2023-06-30",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427102807": {
@@ -178,7 +340,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2021-07-05",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476134699249": {
@@ -196,7 +358,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476135026929": {
@@ -214,7 +376,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9798256395193": {
@@ -232,7 +394,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-06-01",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476138139889": {
@@ -250,7 +412,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476134371569": {
@@ -268,7 +430,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-191726426028": {
@@ -286,7 +448,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2022-08-30",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9798182508117": {
@@ -304,7 +466,25 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-06-16",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T01:44:28.136Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
+      "lastStockStatus": "in_stock"
+    },
+    "bn-889698811323": {
+      "id": "bn-889698811323",
+      "retailer": "barnesandnoble",
+      "ean": "889698811323",
+      "shopifyId": "9217812496625",
+      "name": "Bitty POP: Pokemon- Pikachu 4 Pack",
+      "brand": null,
+      "price": "$16.99",
+      "priceNumeric": 16.99,
+      "regularPrice": null,
+      "url": "https://www.barnesandnoble.com/w/Bitty-POP-Pokemon-Pikachu-4-Pack-FUNKO/1146554620?ean=889698811323",
+      "inStock": true,
+      "stockStatus": "in_stock",
+      "releaseDate": "2025-07-17",
+      "firstSeen": "2026-08-21T03:04:39.905Z",
+      "lastSeen": "2026-08-21T03:04:39.905Z",
       "lastStockStatus": "in_stock"
     }
   }
