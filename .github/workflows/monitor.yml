@@ -1,151 +1,46 @@
 name: Pokemon TCG Restock Monitor
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
-    inputs:
-      init:
-        description: 'Force initialization (re-baseline all products without notifying)'
-        type: boolean
-        default: false
-      dry_run:
-        description: 'Dry run (scrape + compare, skip notifications and state write)'
-        type: boolean
-        default: false
-
-concurrency:
-  group: monitor
-  cancel-in-progress: true
-
-permissions:
-  contents: write
+  schedule:
+    - cron: "*/15 * * * *"
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
 
-    env:
-      # Notification routing
-      NOTIFY_CHANNELS:     ${{ vars.NOTIFY_CHANNELS || 'discord' }}
-      DISCORD_MENTION:     ${{ vars.DISCORD_MENTION || '<@519659187182108698>' }}
-
-      # Discord
-      DISCORD_WEBHOOK_URL:           ${{ secrets.DISCORD_WEBHOOK_URL }}
-      DISCORD_COMMUNITY_WEBHOOK_URL: ${{ secrets.DISCORD_COMMUNITY_WEBHOOK_URL }}
-
-      # Email
-      EMAIL_ENABLED: ${{ secrets.EMAIL_ENABLED || 'false' }}
-      EMAIL_FROM:    ${{ secrets.EMAIL_FROM }}
-      EMAIL_TO:      ${{ secrets.EMAIL_TO }}
-      SMTP_HOST:     ${{ secrets.SMTP_HOST }}
-      SMTP_PORT:     ${{ secrets.SMTP_PORT }}
-      SMTP_SECURE:   ${{ secrets.SMTP_SECURE }}
-      SMTP_USER:     ${{ secrets.SMTP_USER }}
-      SMTP_PASS:     ${{ secrets.SMTP_PASS }}
-
-      # Retailers — existing
-      BESTBUY_API_KEY:  ${{ secrets.BESTBUY_API_KEY }}
-      TARGET_ENABLED:   ${{ vars.TARGET_ENABLED   || 'true' }}
-      WALMART_ENABLED:  ${{ vars.WALMART_ENABLED  || 'true' }}
-      BESTBUY_ENABLED:  ${{ vars.BESTBUY_ENABLED  || 'true' }}
-
-      # Retailers — new
-      AMAZON_ENABLED:      ${{ vars.AMAZON_ENABLED      || 'true' }}
-      AMAZON_ACCESS_KEY:   ${{ secrets.AMAZON_ACCESS_KEY }}
-      AMAZON_SECRET_KEY:   ${{ secrets.AMAZON_SECRET_KEY }}
-      AMAZON_PARTNER_TAG:  ${{ secrets.AMAZON_PARTNER_TAG }}
-      AMAZON_FBA_ONLY:     ${{ vars.AMAZON_FBA_ONLY     || 'false' }}
-      GAMESTOP_ENABLED:    ${{ vars.GAMESTOP_ENABLED     || 'false' }}
-      BN_ENABLED:          ${{ vars.BN_ENABLED           || 'false' }}
-      PC_ENABLED:          ${{ vars.PC_ENABLED           || 'true' }}
-      PC_COOKIE:           ${{ secrets.PC_COOKIE }}
-      PC_WATCH_URLS:       ${{ vars.PC_WATCH_URLS }}
-      PC_QUEUEIT_IDS:      ${{ vars.PC_QUEUEIT_IDS }}
-      PC_QUEUE_MENTION_EVERYONE: ${{ vars.PC_QUEUE_MENTION_EVERYONE || 'false' }}
-
-      # Community monitors
-      REDDIT_ENABLED:     ${{ vars.REDDIT_ENABLED     || 'true' }}
-      REDDIT_SUBREDDITS:  ${{ vars.REDDIT_SUBREDDITS  || 'PokemonTCG,PokeInvesting' }}
-
-      # Search / filter
-      SEARCH_KEYWORDS: ${{ vars.SEARCH_KEYWORDS }}
-      FILTER_KEYWORDS: ${{ vars.FILTER_KEYWORDS }}
-      MAX_PAGES:       ${{ vars.MAX_PAGES || '3' }}
+    permissions:
+      contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm ci --prefer-offline
+        run: npm ci
 
-      - name: Run monitor
-        id: monitor
+      - name: Run restock monitor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node monitor.js --once
+
+      - name: Save updated state
         run: |
-          FLAGS="--once"
-          if [[ "${{ github.event.inputs.init }}" == "true" ]]; then
-            FLAGS="$FLAGS --init"
-          fi
-          if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then
-            FLAGS="$FLAGS --test"
-          fi
-          node monitor.js $FLAGS
-
-      - name: Commit updated data files
-        if: ${{ github.event.inputs.dry_run != 'true' }}
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Stage both state files if they exist and have changes
-          git add data/products.json data/msrp-database.json 2>/dev/null || true
-
-          if git diff --cached --quiet; then
-            echo "No data changes to commit."
+          if git diff --quiet; then
+            echo "No state changes to commit."
             exit 0
           fi
 
-          git commit -m "chore: update monitor data [skip ci]"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Pull-rebase + retry push to survive concurrent runs
-          for attempt in 1 2 3; do
-            git pull --rebase origin "${{ github.ref_name }}" && \
-            git push origin HEAD:"${{ github.ref_name }}" && break
-            echo "Push attempt $attempt failed — retrying in 10s…"
-            sleep 10
-          done
-
-      - name: Write job summary
-        if: always()
-        run: |
-          echo "## Pokemon TCG Monitor — $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Setting | Value |" >> "$GITHUB_STEP_SUMMARY"
-          echo "|---------|-------|" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Trigger | \`${{ github.event_name }}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Init mode | \`${{ github.event.inputs.init || 'false' }}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Dry run | \`${{ github.event.inputs.dry_run || 'false' }}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Channels | \`${{ vars.NOTIFY_CHANNELS || 'discord' }}\` |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Job status | \`${{ job.status }}\` |" >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Notify Discord on failure
-        if: failure()
-        run: |
-          PAYLOAD=$(jq -n \
-            --arg title "Pokemon TCG Monitor failed" \
-            --arg desc "Workflow run **${{ github.run_number }}** failed on branch \`${{ github.ref_name }}\`.\n\n[View run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" \
-            '{embeds:[{title:$title,description:$desc,color:15158332}]}')
-          curl -s -o /dev/null \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "$DISCORD_WEBHOOK_URL" || true
+          git add .
+          git commit -m "Update Pokemon restock state"
+          git push
