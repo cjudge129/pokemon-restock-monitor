@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastSaved": "2026-08-21T06:10:28.030Z",
+  "lastSaved": "2026-08-21T08:13:52.200Z",
   "target": {
     "target-1001": {
       "id": "target-1001",
@@ -12,7 +12,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.008Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1002": {
@@ -25,7 +25,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.008Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1003": {
@@ -38,7 +38,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.010Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1004": {
@@ -51,7 +51,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.010Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892076": {
@@ -69,7 +69,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892067": {
@@ -87,7 +87,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892069": {
@@ -105,7 +105,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1011060493": {
@@ -123,7 +123,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892068": {
@@ -141,7 +141,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892070": {
@@ -159,7 +159,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892065": {
@@ -177,7 +177,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010892078": {
@@ -195,7 +195,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "target-1010824734": {
@@ -213,7 +213,7 @@
       "inStoreStatus": null,
       "releaseDate": null,
       "firstSeen": "2026-08-21T03:04:39.904Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "out_of_stock"
     }
   },
@@ -228,7 +228,7 @@
       "inStock": true,
       "stockStatus": "in_stock",
       "firstSeen": "2026-05-22T20:05:15.011Z",
-      "lastSeen": "2026-08-21T06:10:28.029Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     }
   },
@@ -250,7 +250,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2021-07-05",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-820650856952": {
@@ -268,7 +268,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2024-09-18",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427103057": {
@@ -286,7 +286,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-07-01",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-820650809064": {
@@ -304,7 +304,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2022-04-22",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427102968": {
@@ -322,7 +322,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2023-06-30",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-74427102807": {
@@ -340,7 +340,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2021-07-05",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476134699249": {
@@ -358,7 +358,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476135026929": {
@@ -376,7 +376,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9798256395193": {
@@ -394,7 +394,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-06-01",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476138139889": {
@@ -412,7 +412,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9476134371569": {
@@ -430,7 +430,7 @@
       "stockStatus": "in_stock",
       "releaseDate": null,
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-191726426028": {
@@ -448,7 +448,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2022-08-30",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-9798182508117": {
@@ -466,7 +466,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2026-06-16",
       "firstSeen": "2026-08-21T01:44:28.136Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     },
     "bn-889698811323": {
@@ -484,7 +484,7 @@
       "stockStatus": "in_stock",
       "releaseDate": "2025-07-17",
       "firstSeen": "2026-08-21T03:04:39.905Z",
-      "lastSeen": "2026-08-21T06:10:28.030Z",
+      "lastSeen": "2026-08-21T08:13:52.199Z",
       "lastStockStatus": "in_stock"
     }
   }
