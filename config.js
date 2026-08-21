@@ -50,11 +50,11 @@ module.exports = {
       keywords,
     },
     bestbuy: {
-      enabled: process.env.BESTBUY_ENABLED !== 'false',
-      name: 'Best Buy',
-      color: 0xffe000,
-      apiKey: process.env.BESTBUY_API_KEY || '',
-      keywords,
+  enabled: false,
+  name: 'Best Buy',
+  color: 0xffe000,
+  apiKey: process.env.BESTBUY_API_KEY || '',
+  keywords,
     },
     amazon: {
       enabled:    process.env.AMAZON_ENABLED !== 'false',
